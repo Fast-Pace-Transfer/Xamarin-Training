@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyLoginApplication1.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           Margin="0,20"/>
+        <Label Text="Enter your User Name" />
+        <Entry Placeholder="user@service.com" x:Name="UsernameEntry" />
+        <Label Text="Enter your Password" />
+        <Entry Placeholder="xxxxxxxxxx" x:Name="PasswordEntry" IsPassword="True" />
+        <Button Text="Login" x:Name="LoginButton" Clicked="LoginButton_Clicked"  />
+    </StackLayout>
+
+</ContentPage>
